@@ -135,7 +135,7 @@ function hold(player){
 
 	updateScore('global');
 
-	if(player.global >= 20){
+	if(player.global >= 100){
 		gameOver(player);
 	}
 	
