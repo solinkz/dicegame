@@ -6,11 +6,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="style.css">
-
+    
     <title>Pig Game</title>
 </head>
 
 <body>
+    <div class="winner">
+        <div class="winner-identity">
+            <div>
+                <p class="player-name"></p>
+                <p>Has won this round</p>
+            </div>
+
+            <a class="close-winner">play again</a>
+        </div>
+    </div>
     <div class="wrapper clearfix">
         <div class="player-0-panel active">
             <div class="player-name" id="name-0">Player 1</div>
@@ -37,12 +47,6 @@
         <img src="dice-5.png" alt="Dice" class="dice">
     </div>
 
-    <!-- <div class="winner">
-        <div class="winner-identity">
-            <p class="player-name"></p>
-            <span>Has won this round</span>
-        </div>
-    </div> -->
     <script src="app.js"></script>
 </body>
 

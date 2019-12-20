@@ -177,9 +177,16 @@ function gameOver(player){
 	updateScore('global');
 
 	setTimeout(()=>{
-		alert(player.name + ' has won the game');
+		document.querySelector('.player-name').innerHTML = player.name;
+		document.querySelector('.winner').style.display = "flex";
+		// alert(player.name + ' has won the game');
 		startGame();
-
+		
 	},1400);
-
+	
 }
+
+document.querySelector('.close-winner').addEventListener('click', ()=>{
+	document.querySelector('.winner').style.display = "none";
+	startGame();
+})
